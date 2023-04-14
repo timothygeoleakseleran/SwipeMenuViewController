@@ -193,7 +193,7 @@ open class SwipeMenuView: UIView {
     /// An object conforms `SwipeMenuViewDataSource`. Provide views and respond to `SwipeMenuView` events.
     open weak var dataSource: SwipeMenuViewDataSource?
 
-    open fileprivate(set) var tabView: TabView? {
+    open var tabView: TabView? {
         didSet {
             guard let tabView = tabView else { return }
             tabView.dataSource = self
